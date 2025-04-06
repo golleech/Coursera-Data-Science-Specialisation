@@ -24,3 +24,18 @@ flowchart TD
     id1 --> id2
 
 ```
+
+```mermaid
+---
+title: Data Wrangling
+---
+flowchart TD
+    id1("pd.read_csv()")
+    id2("landing_outcomes = df['Outcome'].value_counts()")
+    id3("bad_outcomes=set(landing_outcomes.keys()[[1,3,5,6,7]])")
+    id4("landing_class = [0 if x in bad_outcomes else 1 for x in df['Outcome']]")
+    id1 --> id2
+    id2 --> id3
+    id3 --> id4
+
+```
