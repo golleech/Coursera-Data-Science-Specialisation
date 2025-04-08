@@ -39,3 +39,14 @@ flowchart TD
     id3 --> id4
 
 ```
+
+```mermaid
+---
+title: Model Prediction
+---
+flowchart TD
+    id1("pd.read_csv()")
+    id2("landing_outcomes = df['Outcome'].value_counts()")
+    id1 --> id2
+
+```
